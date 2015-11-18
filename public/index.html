@@ -6,8 +6,12 @@
     <script src="angular.js"></script>
     <script src="app.js"></script>
 </head>
+
+ <!--'as main' might be doing the binding-->
 <body ng-controller="MainCtrl as main" class="container">
-    {{main.hello}}
+    <p>{{main.hello}}</p>
+    <p>{{main.item.name}}</p>
+    <p>{{main.item.description}}</p>
 
 </body>
 </html>
